@@ -1,0 +1,2 @@
+# ec2-user sudoers rule
+devstack ALL=(ALL) NOPASSWD: ALL

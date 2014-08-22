@@ -16,5 +16,6 @@ RUN chown root:root /etc/sudoers.d/ec2-user
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD cloud-init-run.sh /tmp/cloud-init-run.sh
+RUN chmod a+x /tmp/cloud-init-run.sh
 
 CMD ["/usr/bin/supervisord"]

@@ -52,3 +52,7 @@ Test it out
 Basic user data::
 
   heat stack-create hello -u https://raw.githubusercontent.com/openstack/heat-templates/master/hot/hello_world.yaml -P "image=cloud-init;key_name=heat_key;admin_pass=Mememe"
+
+Heat software config::
+
+  heat stack-create softy -u https://raw.githubusercontent.com/openstack/heat-templates/master/hot/software-config/example-templates/example-deploy-sequence.yaml -P "image=heat-agent;key_name=heat_key"
